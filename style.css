@@ -1,0 +1,742 @@
+*{
+    margin: 10px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Itim', cursive
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+section{
+    background-color: rgba( 173, 216, 230);
+    width: 100%;
+    height: 100vh;
+    top: 10px;
+    right: 10px;
+}
+
+section nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    right: 10cap;
+    left: 10cap;
+    background: #78cdd3;
+    box-shadow: 0 10px rgba(0, 0, 0, 0);
+    z-index: 1000;
+}
+
+section nav .logo.png img{
+    width: 60px;
+    height: 20px;
+    cursor: pointer;
+    margin: 0px 0;
+
+}
+
+section nav ul{
+    list-style: none;
+}
+
+section nav ul li{
+    display: inline-block;
+    margin: 0 15px
+}
+
+section nav ul li a{
+    text-decoration: none;
+    color: rgb(243, 243, 243);
+    font-weight: 500;
+    font-size: 17px;
+    transition: 0.1s;
+}
+
+section nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #fac031;
+    display: block;
+    transition: 0.2s linear;
+}
+
+section nav ul li a:hover:after{
+    width: 100px;
+}
+
+section nav ul li a:hover{
+    color: #fac031;
+}
+nav .icon{
+    position: absolute;
+    top: 80px;
+    right: 10px;
+
+}
+ nav .icon i{
+    font-size: 18px;
+    color: #000;
+    margin: 0 50px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+nav .icon i:hover{
+    color: #fac031;
+}
+
+.btn{
+    padding: 10px 35px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    outline: none;
+    transition: 6s ease;
+  }
+  .btn :hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 5px white,0 0 10px white, 0 0 15px white;
+    font-weight: bold;
+  }   
+
+section .main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    top: 130px;
+}
+
+
+section .main .men_text h1{
+    font-size: 60px;
+    position: relative;
+    top: -90px;
+    left: 20px;
+}
+section .main .men_text h1 span{
+    margin-left: 15px;
+    color: #fac031;
+    font-family: mv boli;
+    line-height: 40px;
+    font-size: 70px;
+}
+
+section h2{
+    font-size: 60px;
+    padding-top: 20px;
+    position: relative;
+    top: -90px;
+    left: 20px;
+    text-align: center;
+}
+
+section .main .main_image img{
+    width: 200px;
+    position: absolute;
+}
+
+section p{
+    width: 650px;
+    padding-top: 50px;
+    position: relative;
+    bottom: 10px;
+    line-height: 30px;
+    text-align: center;
+    
+}
+
+section .main_btn{
+    background: #fac031;
+    position: relative;
+    left: 123px;
+    bottom: 30px;
+    width: 150px;
+    cursor: pointer;
+}
+
+section .main_btn{
+    color: #000;
+    margin-right: 5px;
+    text-decoration: none;
+
+}
+
+section .main_btn i{
+    color: #fff;
+    transition: 0.3s;
+}
+
+section .main_btn:hover i{
+    transform: translateX(7px)
+}
+/* Style the image slider */
+.slider-container {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.slider {
+    display: flex;
+    justify-content: center;
+}
+
+.slider img {
+    max-width: 100%;
+    max-height: 300px;
+
+}
+
+/* Show only the first image */
+.slider img:first-child {
+    opacity: 1;
+}
+
+/* Optional: Set the animation duration and infinite loop */
+.slider img {
+    animation: slideFade 15s infinite;
+}
+
+/*home*/
+#home{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 840px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+  #home::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url(jpg.3.jpg) no-repeat center center/cover;
+    height: 900px;
+    width: 100%;
+    z-index: -1;
+    opacity: .8;
+  }
+  .main{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid wheat;
+    align-items: center;
+    position: absolute;
+    top: 30%;
+    right: 10%;
+  }
+  .headings{
+    font-family: 'Balsamiq Sans', cursive;;
+    font-size: 3rem;
+    text-align: center;
+    margin: 40px 0px;
+  }
+  
+/* Center the header */
+.header-container {
+    display: flex;
+    justify-content: center;
+    background-color: #dbece7; /* Optional background color */
+}
+
+.header-container a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+    font-size: 18px; /* Optional font size adjustment */
+}
+
+
+
+/*About*/
+
+.about {
+    width: 100%;
+    height: 100vh;
+    padding: 70px 0;
+    background-image: url("background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.about .about_main {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about .about_main .image img {
+    width: 500px; /* Adjust the size of the graphic element */
+    animation: spin 7s linear infinite; /* Add the animation to the image */
+}
+
+/* CSS animation for spinning */
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.about .about_main .about_text {
+    max-width: 500px;
+}
+
+.about .about_main .about_text h1 span {
+    color: #ffdb12;
+    margin-right: 15px;
+    font-family: mv boli;
+}
+
+.about .about_main .about_text h1 {
+    font-size: 55px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.about .about_main .about_text h2 {
+    font-size: 30px;
+    margin: 0 0 30px 0;
+    color: #bb90bb;
+}
+
+.about .about_main .about_text p {
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 20px; /* Adjust the font size as needed */
+    text-align: justify;
+    line-height: 20px; /* Adjust the line height for better readability */
+    color: rgb(98, 155, 150);
+    margin-bottom: 50px;
+}
+
+.about .about_btn {
+    background: #bb90bb;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    margin-top: 100px;
+}
+
+.about .about_btn:hover {
+    background-color: #fac031;
+}
+
+
+
+
+/*Product*/
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+main {
+    padding: 2rem;
+    text-align: center;
+}
+
+.product {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    max-width: 400px;
+    margin: 50 auto;
+}
+
+.product img {
+    max-width: 100%;
+}
+
+.product h2 {
+    margin-top: 1rem;
+}
+
+.product p {
+    color: #666;
+}
+
+.product .price {
+    display: block;
+    font-weight: bold;
+    margin: 1rem 0;
+}
+
+.product button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+}
+
+.product button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.product {
+    flex: 0 0 calc(50% - 20px);
+    max-width: 300px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product h2 {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.product p {
+    font-size: 14px;
+    color: #555;
+}
+
+.price {
+    font-weight: bold;
+    font-size: 16px;
+    color: #008000; /* Green color for the price */
+}
+
+button {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #008000;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+
+
+  /*Review*/
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #6ab4aa;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  article {
+    border: 5px solid #81cac4;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  
+  footer {
+    background-color: #94c9bb;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffffff;
+  }
+  
+  .product {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .product img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .review {
+    margin-top: 20px;
+  }
+  
+  body, html {
+    height: 100%;
+    margin: 0;
+  }
+  
+  .slideshow-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1100px;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+  }
+  
+  .slide {
+    display: none;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    opacity: 1;
+  }
+  
+  .centered {
+    text-align: center;
+}
+
+.centered img {
+    border: 10px solid #000;
+}
+
+
+
+.centered {
+    text-align: center;
+}
+
+.rating {
+    font-size: 30px;
+    color: gold;
+}
+
+.star {
+    display: inline-block;
+}
+
+
+
+
+/*contact*/
+.contact-info { 
+    background-color: rgb(188, 143, 192);
+  } 
+
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 20px;
+  }
+  
+  .contact-info, .social-media {
+    margin-bottom: 30px;
+  }
+  
+  h2 {
+    color: #000000;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .social-icons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff2f2;
+    background-color: #007bff;
+    width: 100px;
+    height: 100px;
+    border-radius: 70%;
+    margin: 50px;
+    font-size: 50px;
+    text-decoration: none;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+  }
+  
+  .social-icons a:hover {
+    transform: scale(2.10);
+    box-shadow: 50 50 50px rgba(0, 0, 0, 0.3);
+  }
+  
+  .social-icons .facebook {
+    background-color: #2a4bb9;
+  }
+  
+  .social-icons .shopee {
+
+    background-color: #0077b5;
+  }
+  
+  .social-icons .instagram {
+    background-color: #dd2956;
+  }
+
+
+
+/*catalog*/
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #6ab4aa;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+main {
+    padding: 2rem;
+    text-align: center;
+}
+
+.catalog {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    max-width: 400px;
+    margin: 50 auto;
+}
+
+.catalog img {
+    max-width: 100%;
+}
+
+.catalog h2 {
+    margin-top: 1rem;
+}
+
+.catalog p {
+    color: #666;
+}
+
+
+.product button:hover {
+    background-color: #0056b3;
+}
+
+
+.catalog-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.catalog {
+    flex: 0 0 calc(50% - 20px);
+    max-width: 300px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.catalog img {
+    max-width: 100%;
+    height: auto;
+}
+
+.catalog h2 {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.catalog p {
+    font-size: 14px;
+    color: #555;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* Use the Google Font in your CSS file */
+
+h1 { 
+    font-family: 'Coiny', cursive;
+    font-weight: 400; /* Use font-weight to specify the font style (e.g., bold) */
+}
+h2 {
+    font-family: 'Titan One', cursive; 
+    font-weight: 400; /* Use font-weight to specify the font style (e.g., bold) */
+  }
+  
+  p {
+    font-family: 'Balsamiq Sans', cursive;
+    font-weight: 400; /* Use font-weight to specify the font style (e.g., regular) */
+  }
+
+  
+
+
